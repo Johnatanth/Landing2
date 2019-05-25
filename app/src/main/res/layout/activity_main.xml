@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="250dp"
-        android:max="15000"
+        android:max="25000"
         android:progress="0"
         android:layout_centerHorizontal = "true"/>
 
