@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Mass_craft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_weight="1"
+        android:text="Mass of craft"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/MassofCraft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mass_craft"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:max="20000"
+        android:progress="0"
+        android:layout_centerHorizontal = "true"/>
+
+    <TextView
+        android:id="@+id/Mass_fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MassofCraft"
+        android:layout_marginTop="60dp"
+        android:text="Mass of fuel"
+        android:textSize="24sp"
+        android:layout_centerHorizontal = "true"/>
+
+    <SeekBar
+        android:id="@+id/MassofFuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mass_fuel"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="423dp"
+        android:max="15000"
+        android:progress="0"
+        android:layout_centerHorizontal = "true"/>
+
+    <TextView
+        android:id="@+id/AngleLanding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="452dp"
+        android:text="Angle"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/AngleofLanding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Speedoflanding"
+        android:layout_marginBottom="257dp"
+        android:max="180"
+        android:progress="90"
+        android:layout_centerHorizontal = "true"/>
+
+    <TextView
+        android:id="@+id/Hight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="393dp"
+        android:layout_marginBottom="306dp"
+        android:layout_weight="1"
+        android:text="Hight"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/HightofLanding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:max="15000"
+        android:progress="0"
+        android:layout_centerHorizontal = "true"/>
+
+    <TextView
+        android:id="@+id/Speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp"
+        android:text="Speed"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/Speedoflanding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:max="2000"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:onClick="onClick"
+        android:text="Finish"
+        android:layout_centerHorizontal = "true"/>
+</RelativeLayout>
