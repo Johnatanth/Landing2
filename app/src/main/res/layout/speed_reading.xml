@@ -8,7 +8,7 @@
 
     <com.example.final_progect.NetView
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="600dp" />
 
     <Button
         android:layout_width="match_parent"
