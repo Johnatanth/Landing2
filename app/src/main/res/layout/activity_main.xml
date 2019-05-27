@@ -1,122 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="vertical">
-
-
-    <TextView
-        android:id="@+id/Mass_craft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal = "true"
-        android:layout_weight="1"
-        android:text="Mass of craft"
-        android:textSize="24sp" />
-
-    <SeekBar
-        android:id="@+id/MassofCraft"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<ScrollView
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_above="@id/ok"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Mass_craft"
-        android:layout_marginTop="35dp"
-        android:layout_weight="1"
-        android:max="20000"
-        android:progress="0"
-        android:layout_centerHorizontal = "true"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Mass_craft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mass of craft"
+            android:textSize="24sp" />
+        <SeekBar
+            android:id="@+id/MassofCraft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20000"
+            android:progress="0"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/Mass_fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mass of fuel"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/Mass_fuel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/MassofCraft"
-        android:layout_centerHorizontal = "true"
-        android:layout_marginTop="34dp"
-        android:text="Mass of fuel"
-        android:textSize="24sp" />
+        <SeekBar
+            android:id="@+id/MassofFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="15000"
+            android:progress="0"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/AngleLanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Angle"
+            android:textSize="24sp" />
 
-    <SeekBar
-        android:id="@+id/MassofFuel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Mass_fuel"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="423dp"
-        android:max="15000"
-        android:progress="0"
-        android:layout_centerHorizontal = "true"/>
+        <SeekBar
+            android:id="@+id/AngleofLanding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Speedoflanding"
+            android:max="180"
+            android:progress="90"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/Hight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hight"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
 
-    <TextView
-        android:id="@+id/AngleLanding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="452dp"
-        android:text="Angle"
-        android:textSize="24sp" />
+        <SeekBar
+            android:id="@+id/HightofLanding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="250dp"
+            android:max="25000"
+            android:progress="0"
+            android:layout_gravity="center"/>
 
-    <SeekBar
-        android:id="@+id/AngleofLanding"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Speedoflanding"
-        android:layout_marginBottom="257dp"
-        android:max="180"
-        android:progress="90"
-        android:layout_centerHorizontal = "true"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/Hight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="393dp"
-        android:layout_marginBottom="306dp"
-        android:layout_weight="1"
-        android:text="Hight"
-        android:textSize="24sp" />
-
-    <SeekBar
-        android:id="@+id/HightofLanding"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="250dp"
-        android:max="25000"
-        android:progress="0"
-        android:layout_centerHorizontal = "true"/>
-
-    <TextView
-        android:id="@+id/Speed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="181dp"
-        android:text="Speed"
-        android:textSize="24sp" />
-
-    <SeekBar
-        android:id="@+id/Speedoflanding"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="131dp"
-        android:max="2000"
-        android:progress="0" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp"
-        android:onClick="onClick"
-        android:text="Finish"
-        android:layout_centerHorizontal = "true"/>
+    </LinearLayout>
+</ScrollView>
+<Button
+    android:id="@+id/ok"
+    android:text="Click me"
+    android:textSize="30sp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 </RelativeLayout>
